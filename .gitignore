@@ -5,3 +5,4 @@ artifacts/*.zip
 artifacts/*.xpi
 .DS_Store
 *.log
+.amo-upload-uuid
