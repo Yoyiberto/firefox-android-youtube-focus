@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="popup.css">
+  <title>YouTube Focus & Controls</title>
+</head>
+<body>
+  <div class="card">
+    <div class="header">
+      <span class="icon">🧘‍♂️</span>
+      <div>
+        <h2>YouTube Focus</h2>
+        <span class="version">v1.1.0 (Android)</span>
+      </div>
+    </div>
+
+    <div class="toggles">
+      <!-- Opción 1: Bloquear Shorts -->
+      <label class="toggle-row">
+        <div class="toggle-info">
+          <span class="toggle-title">🚫 Ocultar Shorts</span>
+          <span class="toggle-desc">Pestaña, carruseles y redirección</span>
+        </div>
+        <input type="checkbox" id="chk-shorts" checked>
+        <span class="slider"></span>
+      </label>
+
+      <!-- Opción 2: Feed Eradicator -->
+      <label class="toggle-row">
+        <div class="toggle-info">
+          <span class="toggle-title">🌱 Feed Eradicator</span>
+          <span class="toggle-desc">Limpia el feed de la página principal</span>
+        </div>
+        <input type="checkbox" id="chk-home" checked>
+        <span class="slider"></span>
+      </label>
+
+      <!-- Opción 3: Ocultar recomendados en reproductor -->
+      <label class="toggle-row">
+        <div class="toggle-info">
+          <span class="toggle-title">👁️ Sin videos sugeridos</span>
+          <span class="toggle-desc">Oculta recomendados bajo el reproductor</span>
+        </div>
+        <input type="checkbox" id="chk-watch" checked>
+        <span class="slider"></span>
+      </label>
+
+      <!-- Opción 4: Media Session & Controles Samsung -->
+      <label class="toggle-row">
+        <div class="toggle-info">
+          <span class="toggle-title">🎵 Media Output Fix</span>
+          <span class="toggle-desc">Segundos exactos y botones ±10s en Android</span>
+        </div>
+        <input type="checkbox" id="chk-media" checked>
+        <span class="slider"></span>
+      </label>
+    </div>
+
+    <div class="footer">
+      <span class="status-indicator">● Activo en YouTube</span>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

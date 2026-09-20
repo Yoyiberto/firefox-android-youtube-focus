@@ -1,0 +1,106 @@
+/* ==========================================================
+   YouTube Focus & Controls - Content Stylesheet
+   ========================================================== */
+
+/* ----------------------------------------------------------
+   1. OCULTAR YOUTUBE SHORTS (html.hide-shorts)
+   ---------------------------------------------------------- */
+html.hide-shorts ytm-pivot-bar-item-renderer:has(a[href^="/shorts"]),
+html.hide-shorts ytm-pivot-bar-item-renderer:has(div.pivot-shorts),
+html.hide-shorts ytm-pivot-bar-item-renderer[aria-label*="Shorts" i],
+html.hide-shorts ytm-pivot-bar-item-renderer[aria-label*="shorts" i],
+html.hide-shorts a.pivot-bar-item-tab[href^="/shorts"],
+html.hide-shorts a[tab-identifier="FEshorts"],
+html.hide-shorts ytm-reel-shelf-renderer,
+html.hide-shorts ytm-reel-item-renderer,
+html.hide-shorts ytm-shorts-lockup-view-model,
+html.hide-shorts ytm-rich-section-renderer:has(ytm-reel-shelf-renderer),
+html.hide-shorts ytm-rich-section-renderer:has(ytm-shorts-lockup-view-model),
+html.hide-shorts ytm-rich-section-renderer:has(a[href*="/shorts/"]),
+html.hide-shorts ytm-item-section-renderer:has(ytm-reel-shelf-renderer),
+html.hide-shorts ytm-section-list-renderer:has(ytm-reel-shelf-renderer),
+html.hide-shorts ytm-compact-video-renderer:has(a[href*="/shorts/"]),
+html.hide-shorts ytm-video-with-context-renderer:has(a[href*="/shorts/"]),
+html.hide-shorts ytm-media-item:has(a[href*="/shorts/"]),
+html.hide-shorts ytd-rich-shelf-renderer[is-shorts],
+html.hide-shorts ytd-reel-shelf-renderer,
+html.hide-shorts ytd-rich-section-renderer:has(ytd-rich-shelf-renderer),
+html.hide-shorts ytd-rich-section-renderer:has(ytd-reel-shelf-renderer),
+html.hide-shorts ytd-guide-entry-renderer:has(a[title="Shorts"]),
+html.hide-shorts ytd-guide-entry-renderer:has(a[href^="/shorts"]),
+html.hide-shorts ytd-mini-guide-entry-renderer[aria-label="Shorts"],
+html.hide-shorts ytd-mini-guide-entry-renderer:has(a[href^="/shorts"]),
+html.hide-shorts ytd-video-renderer:has(a[href*="/shorts/"]),
+html.hide-shorts ytd-compact-video-renderer:has(a[href*="/shorts/"]),
+html.hide-shorts ytd-grid-video-renderer:has(a[href*="/shorts/"]),
+html.hide-shorts #shorts-container,
+html.hide-shorts #shorts-inner-container {
+  display: none !important;
+  visibility: hidden !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+}
+
+/* ----------------------------------------------------------
+   2. FEED ERADICATOR - PÁGINA PRINCIPAL (html.eradicate-home)
+   ---------------------------------------------------------- */
+html.eradicate-home body.is-home-page ytm-rich-grid-renderer,
+html.eradicate-home body.is-home-page ytm-section-list-renderer:not([role="navigation"]),
+html.eradicate-home body.is-home-page ytm-item-section-renderer,
+html.eradicate-home body.is-home-page ytd-rich-grid-renderer,
+html.eradicate-home body.is-home-page #contents.ytd-rich-grid-renderer {
+  display: none !important;
+}
+
+#yt-focus-mode-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 40px 20px;
+  padding: 24px 16px;
+  background: #1e1e24;
+  border-radius: 16px;
+  border: 1px solid #33333e;
+  color: #f1f1f1;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.35);
+}
+
+#yt-focus-mode-card .focus-icon {
+  font-size: 38px;
+  margin-bottom: 10px;
+}
+
+#yt-focus-mode-card h2 {
+  font-size: 18px;
+  margin: 0 0 8px 0;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+#yt-focus-mode-card p {
+  font-size: 13px;
+  color: #aaaaaa;
+  margin: 4px 0;
+  line-height: 1.4;
+}
+
+#yt-focus-mode-card .focus-tip {
+  color: #ff7139;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+/* ----------------------------------------------------------
+   3. OCULTAR RECOMENDADOS EN REPRODUCTOR (html.hide-watch-recs)
+   ---------------------------------------------------------- */
+html.hide-watch-recs body.is-watch-page ytm-item-section-renderer[section-identifier="related-items"],
+html.hide-watch-recs body.is-watch-page ytm-compact-video-renderer,
+html.hide-watch-recs body.is-watch-page ytd-watch-next-secondary-results-renderer,
+html.hide-watch-recs body.is-watch-page #related {
+  display: none !important;
+}

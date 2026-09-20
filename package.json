@@ -1,0 +1,16 @@
+{
+  "name": "android-extension",
+  "version": "1.0.0",
+  "description": "Desarrollo y firma automatica de extensiones para Firefox en Android",
+  "scripts": {
+    "check-device": "bash scripts/check-device.sh",
+    "lint": "web-ext lint --source-dir=src",
+    "build": "web-ext build --source-dir=src --artifacts-dir=artifacts --overwrite-dest",
+    "dev": "bash scripts/dev.sh",
+    "sign": "bash scripts/sign.sh",
+    "push": "bash scripts/push.sh",
+    "serve": "bash scripts/serve.sh"
+  },
+  "author": "jmendez",
+  "license": "MIT"
+}

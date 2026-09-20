@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  padding: 14px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  min-width: 270px;
+  background-color: #121216;
+  color: #f1f1f4;
+  user-select: none;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid #282832;
+  padding-bottom: 10px;
+}
+
+.header h2 {
+  font-size: 16px;
+  margin: 0;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.version {
+  font-size: 11px;
+  color: #8b8b98;
+}
+
+.icon {
+  font-size: 24px;
+}
+
+.toggles {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.toggle-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #1c1c24;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #2a2a38;
+  cursor: pointer;
+  position: relative;
+}
+
+.toggle-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  max-width: 190px;
+}
+
+.toggle-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.toggle-desc {
+  font-size: 10px;
+  color: #9999aa;
+  line-height: 1.2;
+}
+
+/* Custom switch toggle */
+.toggle-row input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  width: 36px;
+  height: 20px;
+  background-color: #3b3b4f;
+  border-radius: 20px;
+  position: relative;
+  transition: background-color 0.25s;
+  flex-shrink: 0;
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  height: 14px;
+  width: 14px;
+  left: 3px;
+  bottom: 3px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  transition: transform 0.25s;
+}
+
+input:checked + .slider {
+  background-color: #2e7d32;
+}
+
+input:checked + .slider::before {
+  transform: translateX(16px);
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  padding-top: 4px;
+}
+
+.status-indicator {
+  font-size: 11px;
+  color: #00dd88;
+  font-weight: 600;
+}
